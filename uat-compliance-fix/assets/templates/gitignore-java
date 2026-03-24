@@ -1,0 +1,49 @@
+# L1: 秘密文件
+.env
+.env.*
+!.env.example
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+credentials.json
+serviceAccount.json
+src/main/resources/application-local.yml
+src/main/resources/application-dev.yml
+**/secrets/
+id_rsa
+id_ed25519
+known_hosts
+
+# 构建产物
+target/
+build/
+*.jar
+*.war
+*.class
+
+# 审计报告
+*_Code_Review_Report.*
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 扫描产物
+.scannerwork/
+
+# ⚠️ 以下文件不得忽略
+# *Test.java         ← 禁止！测试必须入库
+# pom.xml            ← 禁止！依赖定义必须入库
+# Dockerfile         ← 禁止！构建定义必须入库

@@ -1,0 +1,37 @@
+# Git 元数据
+.git
+.gitignore
+
+# 秘密文件
+data/private/
+.env
+.env.*
+.netrc
+*.pem
+*.key
+
+# 文档与报告
+*.md
+*.pdf
+LICENSE
+CHANGELOG.md
+
+# 构建与部署配置
+Makefile
+.argo.yaml
+.gitlab-ci.yml
+.nomad.hcl
+docker-compose*.yml
+
+# IDE
+.idea/
+.vscode/
+
+# 测试（生产镜像不需要）
+*_test.go
+**/*_test.go
+**/testdata/
+
+# 系统文件
+.DS_Store
+Thumbs.db

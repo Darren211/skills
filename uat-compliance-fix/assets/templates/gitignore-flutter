@@ -1,0 +1,40 @@
+# L1: 秘密文件
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+*.pem
+*.key
+credentials.json
+serviceAccount.json
+id_rsa
+id_ed25519
+known_hosts
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+
+# 审计报告
+*_Code_Review_Report.*
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ⚠️ 以下文件不得忽略
+# *_test.dart        ← 禁止！测试必须入库
+# pubspec.lock       ← 禁止！依赖锁定必须入库
+# Dockerfile         ← 禁止！构建定义必须入库
